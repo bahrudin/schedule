@@ -1,7 +1,7 @@
 <p align="center">
-<img src="database-manual/1.png"/>
+<img src="database-manual/ERD.jpg"/>
 </p>
-## Blogs App
+## Shcedule App
 
 Project web application for web programmer challenge job in indonesia.
 
