@@ -7,6 +7,7 @@ use \App\Http\Controllers\EmployeeController;
 use \App\Http\Controllers\ScheduleController;
 use \App\Http\Controllers\RoleController;
 use \App\Http\Controllers\PermissionController;
+use \App\Http\Controllers\PresentController;
 
 
 Route::prefix('admin')->group(static function () {
@@ -23,6 +24,9 @@ Route::prefix('admin')->group(static function () {
 
         Route::get('/schedule/list', [ScheduleController::class, 'list'])->name('schedule.json.list');
         Route::resource('/schedule', ScheduleController::class);
+
+        Route::get('/present/list', [PresentController::class, 'list'])->name('present.json.list');
+        Route::resource('/present', PresentController::class);
 
         Route::get('/permission', [PermissionController::class, 'index'])->name('permission.index');
         Route::get('/role', [RoleController::class, 'index'])->name('role.index');

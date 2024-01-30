@@ -32,6 +32,24 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a href="#" class="nav-link {{ (request()->is('present*')) ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-school"></i>
+                    <p>
+                        Kehadiran
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{{ route('present.index') }}" class="nav-link {{ Route::is('present.index') ? 'active' : '' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Present</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
 
             <li class="nav-item">
                 <a href="#" class="nav-link {{ (request()->is('picket*')) ? 'active' : '' }}">

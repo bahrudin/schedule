@@ -85,7 +85,7 @@
                 columns: [
                     {data: "DT_RowIndex", name: 'DT_RowIndex', orderable: false, serachable: false},
                     {data: 'first_name', name: 'first_name'},
-                    {data: 'employee', name: 'employee'},
+                    {data: 'jabatan', name: 'jabatan'},
                     {data: 'name', name: 'name'},
                     {data: "Actions", orderable: false, serachable: false, sClass: 'text-center'},
                 ]

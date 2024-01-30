@@ -10,6 +10,7 @@ class Employee extends Model
 {
     use HasFactory;
 
+    protected $table = 'employees';
     public function position():BelongsTo
     {
         return $this->belongsTo(Position::class,'position_id','id');

@@ -24,9 +24,9 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3>{{ $post_count }}</h3>
+                        <h3>{{ $count }}</h3>
 
-                        <p>Publish Blog</p>
+                        <p>Data</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
@@ -39,9 +39,9 @@
                 <!-- small box -->
                 <div class="small-box bg-success">
                     <div class="inner">
-                        <h3>{{ $webVisit }}<sup style="font-size: 20px">%</sup></h3>
+                        <h3>2024<sup style="font-size: 20px">%</sup></h3>
 
-                        <p>Web Visitor</p>
+                        <p>DATA</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
@@ -54,9 +54,9 @@
                 <!-- small box -->
                 <div class="small-box bg-warning">
                     <div class="inner">
-                        <h3>20</h3>
+                        <h3>2024</h3>
 
-                        <p>User Registrations</p>
+                        <p>Data</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
@@ -69,9 +69,9 @@
                 <!-- small box -->
                 <div class="small-box bg-danger">
                     <div class="inner">
-                        <h3>89</h3>
+                        <h3>2024</h3>
 
-                        <p>Unique Visitors</p>
+                        <p>Data</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>

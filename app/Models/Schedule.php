@@ -10,6 +10,8 @@ class Schedule extends Model
 {
     use HasFactory;
 
+    protected $table = 'schedules';
+
     public function shift():BelongsTo
     {
         return $this->belongsTo(Shift::class,'shift_id','id');
@@ -17,6 +19,16 @@ class Schedule extends Model
 
     public function employee():BelongsTo
     {
-        return $this->belongsTo(Employee::class,'employee_id','id');
+        return $this->belongsTo(Employee::class, 'employee_id', 'id');
+    }
+
+    public function position():BelongsTo
+    {
+        return $this->belongsTo(Position::class, 'position_id', 'id');
+    }
+
+    public function getNamePositionAttribute()
+    {
+        return $this->position->name;
     }
 }

@@ -8,11 +8,9 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function index(){
-        $postPublish = BlogPost::where('is_publish','1')->get();
-        $webVisit = BlogPost::withTotalVisitCount()->first()->visit_count_total;
 
-        $post_count = count($postPublish);
+        $count = '2024';
 
-        return view('admins.dashboard',['post_count'=>$post_count, 'webVisit'=>$webVisit]);
+        return view('admins.dashboard',['count'=>$count]);
     }
 }

@@ -118,7 +118,7 @@
                 let formData = $(this).serialize();
                 $.ajax({
                     type: "POST",
-                    url: "{{ route('blog-category.store') }}", /* endpoint */
+                    url: "{{ route('shift.store') }}", /* endpoint */
                     data: formData,
                     success: function (response) {
                         if (response.status == true) {
@@ -161,7 +161,7 @@
                 let dataId = $(this).data('id');
                 $.ajax({
                     type: 'GET',
-                    url: '/admin/blog-category/' + dataId,
+                    url: '/admin/shift/' + dataId,
                     success: function (data) {
                         $('#formEdit input[name="id"]').val(data.id);
                         $('#formEdit input[name="name"]').val(data.name);
@@ -180,7 +180,7 @@
                 let dataId = $('#formEdit').find('input[name="id"]').val();
                 $.ajax({
                     type: 'PUT',
-                    url: '/admin/blog-category/' + dataId, //endpoint
+                    url: '/admin/shift/' + dataId, //endpoint
                     data: formData,
                     success: function (response) {
                         if (response.status == true) {
@@ -217,7 +217,7 @@
                         let dataId = $(this).data('id');
                         $.ajax({
                             type: 'DELETE',
-                            url: '/admin/blog-category/' + dataId, // endpoint
+                            url: '/admin/shift/' + dataId, // endpoint
                             success: function (response) {
                                 if (response.status == true) {
                                     eTable.draw();

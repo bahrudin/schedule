@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Employee;
+use App\Models\Present;
 use App\Models\Schedule;
 use Illuminate\Http\Request;
 
@@ -30,12 +32,15 @@ class ScheduleController extends Controller
 
             return datatables()->of($Shift)
                 ->addIndexColumn()
+                ->addColumn('jabatan', function (Schedule $present) {
+                    return $present->employee->position->name;
+                })
                 ->addColumn('Actions', function ($row) {
                     $html = '<button class="btn btn-warning btn-xs btnEdit" data-id="'.$row->id.'" data-toggle="modal" data-target="#myModalEdit">Edit</button>';
                     $html .= '<button class="btn btn-danger btn-xs btnDelete" data-id="'.$row->id.'">Hapus</button>';
                     return $html;
                 })
-                ->rawColumns(['Actions'])
+                ->rawColumns(['Actions','jabatan'])
                 ->toJson();
 //        }
     }

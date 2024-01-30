@@ -44,7 +44,7 @@ Project web application for web programmer challenge job in indonesia.
 - pass: brebes
 
 <p>
-<img src="database-manual/Tampilan.png"><br>
+<img src="database-manual/jadwal_user.png"><br>
 <img src="database-manual/ERD.jpg"><br>
 </p>
 
