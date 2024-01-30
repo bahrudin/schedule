@@ -7,7 +7,7 @@ Project web application for web programmer challenge job in indonesia.
 
 ## Module
 
-- Blog post, Category,
+- Schedule (piket),
 - Role Access [Breeze](https://laravel.com/docs/10.x/starter-kits).
 
 ## Learning
